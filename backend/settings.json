@@ -1,0 +1,14 @@
+{
+  "siteName": "Pent-Shop",
+  "siteDescription": "Your Spiritual Shopping Destination",
+  "adminEmail": "admin@pentshop.com",
+  "enableNotifications": true,
+  "maintenanceMode": false,
+  "theme": "light",
+  "emailSettings": {
+    "smtpHost": "smtp.gmail.com",
+    "smtpPort": 587,
+    "smtpSecure": false
+  },
+  "lastUpdated": "2025-08-19T20:40:31.479Z"
+}

@@ -1,11 +1,17 @@
 [
   {
+    "id": 1755498184499,
     "items": [
       {
-        "id": 1754898327742,
+        "id": 1755461435951,
         "name": "Teens Syllabus",
         "price": 50,
-        "img": "/uploads/1754898327707.jpg",
+        "description": "Church of Pentecost Teens Syllabus",
+        "colors": "",
+        "sizes": "",
+        "images": [
+          "/uploads/1755461435939-442826675.jpg"
+        ],
         "quantity": 1
       }
     ],
@@ -17,17 +23,23 @@
       "city": "Tema"
     },
     "paymentMethod": "momo",
-    "reference": "ORD-1754903646023",
-    "date": "2025-08-11T09:14:05.990Z",
+    "reference": "MOMO-TXN-1755498184483",
+    "date": "2025-08-18T06:23:04.483Z",
     "userEmail": "dawsonsam05595@gmail.com"
   },
   {
+    "id": 1755498186189,
     "items": [
       {
-        "id": 1754897978078,
-        "name": "Amalitech",
+        "id": 1755461435951,
+        "name": "Teens Syllabus",
         "price": 50,
-        "img": "/uploads/1754897978011.jpg",
+        "description": "Church of Pentecost Teens Syllabus",
+        "colors": "",
+        "sizes": "",
+        "images": [
+          "/uploads/1755461435939-442826675.jpg"
+        ],
         "quantity": 1
       }
     ],
@@ -39,68 +51,23 @@
       "city": "Tema"
     },
     "paymentMethod": "momo",
-    "reference": "ORD-1754903844240",
-    "date": "2025-08-11T09:17:24.205Z",
+    "reference": "MOMO-TXN-1755498184483",
+    "date": "2025-08-18T06:23:04.483Z",
     "userEmail": "dawsonsam05595@gmail.com"
   },
   {
+    "id": 1755498781354,
     "items": [
       {
-        "id": 1754897978078,
-        "name": "Amalitech",
-        "price": 50,
-        "img": "/uploads/1754897978011.jpg",
-        "quantity": 5
-      },
-      {
-        "id": 1754898327742,
+        "id": 1755461435951,
         "name": "Teens Syllabus",
         "price": 50,
-        "img": "/uploads/1754898327707.jpg",
-        "quantity": 4
-      }
-    ],
-    "total": "450.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754903996707",
-    "date": "2025-08-11T09:19:56.685Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754897978078,
-        "name": "Amalitech",
-        "price": 50,
-        "img": "/uploads/1754897978011.jpg",
-        "quantity": 2
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754904749704",
-    "date": "2025-08-11T09:32:29.682Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754898327742,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754898327707.jpg",
+        "description": "Church of Pentecost Teens Syllabus",
+        "colors": "",
+        "sizes": "",
+        "images": [
+          "/uploads/1755461435939-442826675.jpg"
+        ],
         "quantity": 1
       }
     ],
@@ -112,17 +79,23 @@
       "city": "Tema"
     },
     "paymentMethod": "momo",
-    "reference": "ORD-1754904972844",
-    "date": "2025-08-11T09:36:12.815Z",
+    "reference": "MOMO-TXN-1755498781258",
+    "date": "2025-08-18T06:33:01.258Z",
     "userEmail": "dawsonsam05595@gmail.com"
   },
   {
+    "id": 1755498782851,
     "items": [
       {
-        "id": 1754897978078,
-        "name": "Amalitech",
+        "id": 1755461435951,
+        "name": "Teens Syllabus",
         "price": 50,
-        "img": "/uploads/1754897978011.jpg",
+        "description": "Church of Pentecost Teens Syllabus",
+        "colors": "",
+        "sizes": "",
+        "images": [
+          "/uploads/1755461435939-442826675.jpg"
+        ],
         "quantity": 1
       }
     ],
@@ -134,17 +107,23 @@
       "city": "Tema"
     },
     "paymentMethod": "momo",
-    "reference": "ORD-1754906486466",
-    "date": "2025-08-11T10:01:26.442Z",
+    "reference": "MOMO-TXN-1755498781258",
+    "date": "2025-08-18T06:33:01.258Z",
     "userEmail": "dawsonsam05595@gmail.com"
   },
   {
+    "id": 1755499639213,
     "items": [
       {
-        "id": 1754898327742,
+        "id": 1755461435951,
         "name": "Teens Syllabus",
         "price": 50,
-        "img": "/uploads/1754898327707.jpg",
+        "description": "Church of Pentecost Teens Syllabus",
+        "colors": "",
+        "sizes": "",
+        "images": [
+          "/uploads/1755461435939-442826675.jpg"
+        ],
         "quantity": 1
       }
     ],
@@ -156,17 +135,23 @@
       "city": "Tema"
     },
     "paymentMethod": "momo",
-    "reference": "ORD-1754908525202",
-    "date": "2025-08-11T10:35:25.180Z",
+    "reference": "MOMO-TXN-1755499639125",
+    "date": "2025-08-18T06:47:19.125Z",
     "userEmail": "dawsonsam05595@gmail.com"
   },
   {
+    "id": 1755499640836,
     "items": [
       {
-        "id": 1754898327742,
+        "id": 1755461435951,
         "name": "Teens Syllabus",
         "price": 50,
-        "img": "/uploads/1754898327707.jpg",
+        "description": "Church of Pentecost Teens Syllabus",
+        "colors": "",
+        "sizes": "",
+        "images": [
+          "/uploads/1755461435939-442826675.jpg"
+        ],
         "quantity": 1
       }
     ],
@@ -178,251 +163,27 @@
       "city": "Tema"
     },
     "paymentMethod": "momo",
-    "reference": "ORD-1754926781760",
-    "date": "2025-08-11T15:39:41.726Z",
+    "reference": "MOMO-TXN-1755499639125",
+    "date": "2025-08-18T06:47:19.125Z",
     "userEmail": "dawsonsam05595@gmail.com"
   },
   {
+    "id": 1755512113153,
     "items": [
       {
-        "id": 1754928188965,
-        "name": "God's Faithfulness",
-        "price": 50,
-        "img": "/uploads/1754928188926.jpg",
-        "description": "God's Faithfulness to The Church of Pentecost",
-        "quantity": 1
-      },
-      {
-        "id": 1754928331323,
-        "name": "Children's Syllabus",
-        "price": 35,
-        "img": "/uploads/1754928331290.jpg",
-        "description": "Children's Syllabus for The Church of Pentecost",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Violet",
-        "selectedSize": "xxl",
-        "quantity": 2
-      }
-    ],
-    "total": "185.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "+233559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754945026693",
-    "date": "2025-08-11T20:43:46.653Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754928188965,
-        "name": "God's Faithfulness",
-        "price": 50,
-        "img": "/uploads/1754928188926.jpg",
-        "description": "God's Faithfulness to The Church of Pentecost",
-        "quantity": 1
-      },
-      {
-        "id": 1754928331323,
-        "name": "Children's Syllabus",
-        "price": 35,
-        "img": "/uploads/1754928331290.jpg",
-        "description": "Children's Syllabus for The Church of Pentecost",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Violet",
-        "selectedSize": "xxl",
-        "quantity": 2
-      }
-    ],
-    "total": "185.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "+233559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754945027491",
-    "date": "2025-08-11T20:43:46.653Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754928188965,
-        "name": "God's Faithfulness",
-        "price": 50,
-        "img": "/uploads/1754928188926.jpg",
-        "description": "God's Faithfulness to The Church of Pentecost",
-        "quantity": 1
-      },
-      {
-        "id": 1754928331323,
-        "name": "Children's Syllabus",
-        "price": 35,
-        "img": "/uploads/1754928331290.jpg",
-        "description": "Children's Syllabus for The Church of Pentecost",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Violet",
-        "selectedSize": "xxl",
-        "quantity": 2
-      }
-    ],
-    "total": "185.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "+233559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754945057090",
-    "date": "2025-08-11T20:44:17.059Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
+        "id": 1755461435951,
         "name": "Teens Syllabus",
         "price": 50,
-        "img": "/uploads/1754927364257.jpg",
         "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
+        "colors": "",
+        "sizes": "",
         "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
+          "/uploads/1755461435939-442826675.jpg"
         ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
         "quantity": 1
       }
     ],
-    "total": "100.00",
+    "total": "50.00",
     "shipping": {
       "fullName": "Samuel Yaw Dawson",
       "phone": "0559539493",
@@ -430,56 +191,27 @@
       "city": "Tema"
     },
     "paymentMethod": "momo",
-    "reference": "ORD-1754945128795",
-    "date": "2025-08-11T20:45:28.771Z",
+    "reference": "MOMO-TXN-1755512113077",
+    "date": "2025-08-18T10:15:13.077Z",
     "userEmail": "dawsonsam05595@gmail.com"
   },
   {
+    "id": 1755512114559,
     "items": [
       {
-        "id": 1754927364299,
+        "id": 1755461435951,
         "name": "Teens Syllabus",
         "price": 50,
-        "img": "/uploads/1754927364257.jpg",
         "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
+        "colors": "",
+        "sizes": "",
         "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
+          "/uploads/1755461435939-442826675.jpg"
         ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
         "quantity": 1
       }
     ],
-    "total": "100.00",
+    "total": "50.00",
     "shipping": {
       "fullName": "Samuel Yaw Dawson",
       "phone": "0559539493",
@@ -487,977 +219,8 @@
       "city": "Tema"
     },
     "paymentMethod": "momo",
-    "reference": "ORD-1754945129502",
-    "date": "2025-08-11T20:45:28.771Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754945428441",
-    "date": "2025-08-11T20:50:28.412Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754945429135",
-    "date": "2025-08-11T20:50:28.412Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754945629022",
-    "date": "2025-08-11T20:53:48.991Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754945629722",
-    "date": "2025-08-11T20:53:48.991Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754947410671",
-    "date": "2025-08-11T21:23:30.614Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754947411471",
-    "date": "2025-08-11T21:23:30.614Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754947938451",
-    "date": "2025-08-11T21:32:18.414Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754947939216",
-    "date": "2025-08-11T21:32:18.414Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754947958199",
-    "date": "2025-08-11T21:32:38.164Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754947959681",
-    "date": "2025-08-11T21:32:38.164Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754948309796",
-    "date": "2025-08-11T21:38:29.771Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754948310478",
-    "date": "2025-08-11T21:38:29.771Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754948335479",
-    "date": "2025-08-11T21:38:55.450Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754948336168",
-    "date": "2025-08-11T21:38:55.450Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "MOMO-TXN-123456",
-    "date": "2025-08-11T21:44:08.803Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "MOMO-TXN-123456",
-    "date": "2025-08-11T21:44:08.803Z",
-    "userEmail": "dawsonsam05595@gmail.com"
-  },
-  {
-    "items": [
-      {
-        "id": 1754927364299,
-        "name": "Teens Syllabus",
-        "price": 50,
-        "img": "/uploads/1754927364257.jpg",
-        "description": "Church of Pentecost Teens Syllabus",
-        "quantity": 1
-      },
-      {
-        "id": 1754940901123,
-        "name": "Children’s Ministry @ 50",
-        "price": 50,
-        "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-        "colors": [
-          "Violet",
-          "Green",
-          "Light Green",
-          "Red",
-          "Orange",
-          "Ash",
-          "Yellow"
-        ],
-        "sizes": [
-          "xl",
-          "l",
-          "xxl",
-          "s",
-          "m"
-        ],
-        "images": [
-          "/uploads/1754940901100.jpeg",
-          "/uploads/1754940901102.jpeg",
-          "/uploads/1754940901106.jpeg",
-          "/uploads/1754940901107.jpeg",
-          "/uploads/1754940901108.jpeg",
-          "/uploads/1754940901109.jpeg",
-          "/uploads/1754940901110.jpeg"
-        ],
-        "selectedColor": "Green",
-        "selectedSize": "xxl",
-        "quantity": 1
-      }
-    ],
-    "total": "100.00",
-    "shipping": {
-      "fullName": "Samuel Yaw Dawson",
-      "phone": "0559539493",
-      "address": "Tema Newtown",
-      "city": "Tema"
-    },
-    "paymentMethod": "momo",
-    "reference": "ORD-1754948739219",
-    "date": "2025-08-11T21:45:39.195Z",
+    "reference": "MOMO-TXN-1755512113077",
+    "date": "2025-08-18T10:15:13.077Z",
     "userEmail": "dawsonsam05595@gmail.com"
   }
 ]
