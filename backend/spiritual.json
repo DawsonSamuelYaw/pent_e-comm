@@ -17,5 +17,23 @@
     "area": "020",
     "mobile": "8485971",
     "email": "gcharlesboadu@gmail.com"
+  },
+  {
+    "id": 1755887794698,
+    "fullName": "Samuel Yaw Dawson",
+    "age": "50",
+    "region": "Northern",
+    "area": "055",
+    "mobile": "9539493",
+    "email": "dawsonsam05595@gmail.com"
+  },
+  {
+    "id": 1756997389619,
+    "fullName": "Gilbert",
+    "age": "22",
+    "region": "Greater Accra",
+    "area": "Accra",
+    "mobile": "0555555",
+    "email": "gcharlesboadu@gmail.com"
   }
 ]

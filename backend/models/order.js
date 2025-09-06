@@ -1,26 +1,26 @@
 const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({
-  userEmail: { 
-    type: String, 
+  userEmail: {
+    type: String,
     required: [true, 'User email is required'],
     lowercase: true,
     trim: true,
     match: [/^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Please provide a valid email']
   },
-  amount: { 
-    type: Number, 
+  amount: {
+    type: Number,
     required: [true, 'Order amount is required'],
     min: [0, 'Amount must be positive']
   },
-  reference: { 
-    type: String, 
+  reference: {
+    type: String,
     required: [true, 'Payment reference is required'],
     unique: true,
     trim: true
   },
-  status: { 
-    type: String, 
+  status: {
+    type: String,
     enum: {
       values: ['Pending', 'Processing', 'Delivered', 'Cancelled'],
       message: 'Status must be one of: Pending, Processing, Delivered, Cancelled'
@@ -28,33 +28,49 @@ const orderSchema = new mongoose.Schema({
     default: 'Pending'
   },
   products: [{
-    productId: { 
-      type: mongoose.Schema.Types.ObjectId,
-      // Not required since some products might be deleted from catalog
+    productId: {
+      type: String, // Changed from ObjectId to String
+      required: [true, 'Product ID is required'],
+      trim: true
     },
-    name: { 
-      type: String, 
+    name: {
+      type: String,
       required: [true, 'Product name is required'],
       trim: true
     },
-    price: { 
-      type: Number, 
+    price: {
+      type: Number,
       required: [true, 'Product price is required'],
       min: [0, 'Price must be positive']
     },
-    quantity: { 
-      type: Number, 
+    quantity: {
+      type: Number,
       default: 1,
       min: [1, 'Quantity must be at least 1']
     }
   }],
-  createdAt: { 
-    type: Date, 
-    default: Date.now 
+  paymentMethod: {
+    type: String,
+    trim: true
   },
-  updatedAt: { 
-    type: Date, 
-    default: Date.now 
+  customerInfo: {
+    fullName: { type: String, trim: true },
+    phone: { type: String, trim: true },
+    address: { type: String, trim: true },
+    city: { type: String, trim: true }
+  },
+  paymentInfo: {
+    momoNumber: { type: String, trim: true },
+    momoNetwork: { type: String, trim: true },
+    paypalEmail: { type: String, trim: true }
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now
+  },
+  updatedAt: {
+    type: Date,
+    default: Date.now
   },
   // Additional fields for better order management
   customerName: {

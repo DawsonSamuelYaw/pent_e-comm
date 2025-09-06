@@ -1,47 +1,5 @@
 [
   {
-    "id": 1754940901123,
-    "name": "Children’s Ministry @ 50",
-    "price": "50",
-    "description": "elebrate 50 years of God’s faithfulness to the Children’s Ministry of the Church of Pentecost with this vibrant and comfortable commemorative T-shirt.\r\n\r\nMaterial: Soft, breathable cotton blend – perfect for everyday wear.\r\n\r\nDesign: Features the official Children’s Ministry @ 50 anniversary logo, symbolizing growth, unity, and the next generation for Christ.\r\n\r\nColors: Available in multiple bright, child-friendly colors.\r\n\r\nFit: Unisex sizes for children and youth.\r\n\r\nOccasion: Ideal for anniversary celebrations, church services, outreach programs, and everyday ministry events.",
-    "colors": [
-      "Violet",
-      "Green",
-      "Light Green",
-      "Red",
-      "Orange",
-      "Ash",
-      "Yellow"
-    ],
-    "sizes": [
-      "xl",
-      "l",
-      "xxl",
-      "s",
-      "m"
-    ],
-    "images": [
-      "/uploads/1754940901100.jpeg",
-      "/uploads/1754940901102.jpeg",
-      "/uploads/1754940901106.jpeg",
-      "/uploads/1754940901107.jpeg",
-      "/uploads/1754940901108.jpeg",
-      "/uploads/1754940901109.jpeg",
-      "/uploads/1754940901110.jpeg"
-    ]
-  },
-  {
-    "id": 1755461435951,
-    "name": "Teens Syllabus",
-    "price": "50",
-    "description": "Church of Pentecost Teens Syllabus",
-    "colors": "",
-    "sizes": "",
-    "images": [
-      "/uploads/1755461435939-442826675.jpg"
-    ]
-  },
-  {
     "id": "1755619563164",
     "name": "Youth Cloth",
     "price": 50,
@@ -50,7 +8,8 @@
     "sizes": [],
     "images": [
       "/uploads/1755619563156-481023657.jpeg"
-    ]
+    ],
+    "updatedAt": "2025-08-27T06:17:39.243Z"
   },
   {
     "id": "1755619629641",
@@ -73,5 +32,17 @@
     "images": [
       "/uploads/1755647044849-4865282.jpg"
     ]
+  },
+  {
+    "id": "1755726759174",
+    "name": "Children’s Syllabu",
+    "price": 50,
+    "description": "The Church of Pentecost, Children's Ministry",
+    "colors": [],
+    "sizes": [],
+    "images": [
+      "/uploads/1755726759166-881013206.jpg"
+    ],
+    "updatedAt": "2025-08-26T20:23:08.937Z"
   }
 ]
