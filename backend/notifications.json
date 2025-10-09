@@ -639,5 +639,337 @@
     "message": "Hello",
     "timestamp": "2025-08-28T08:22:41.135Z",
     "sent": false
+  },
+  {
+    "id": 1757455658052,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-09T22:07:38.052Z",
+    "sent": false
+  },
+  {
+    "id": 1757455659475,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-09T22:07:39.475Z",
+    "sent": false
+  },
+  {
+    "id": 1757456618245,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "H",
+    "timestamp": "2025-09-09T22:23:38.245Z",
+    "sent": false
+  },
+  {
+    "id": 1757477239188,
+    "name": "Nai Comfort",
+    "email": "abigailmills0554@gmail.com",
+    "message": "HELLO",
+    "timestamp": "2025-09-10T04:07:19.188Z",
+    "sent": false
+  },
+  {
+    "id": 1757477240489,
+    "name": "Nai Comfort",
+    "email": "abigailmills0554@gmail.com",
+    "message": "HELLO",
+    "timestamp": "2025-09-10T04:07:20.489Z",
+    "sent": false
+  },
+  {
+    "id": 1757477252694,
+    "name": "Nai Comfort",
+    "email": "abigailmills0554@gmail.com",
+    "message": "HELLO",
+    "timestamp": "2025-09-10T04:07:32.694Z",
+    "sent": false
+  },
+  {
+    "id": 1757477253921,
+    "name": "Nai Comfort",
+    "email": "abigailmills0554@gmail.com",
+    "message": "HELLO",
+    "timestamp": "2025-09-10T04:07:33.921Z",
+    "sent": false
+  },
+  {
+    "id": 1757477600622,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T04:13:20.622Z",
+    "sent": false
+  },
+  {
+    "id": 1757477601899,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T04:13:21.899Z",
+    "sent": false
+  },
+  {
+    "id": 1757477810973,
+    "name": "Nai Comfort",
+    "email": "abigailmills0554@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T04:16:50.973Z",
+    "sent": false
+  },
+  {
+    "id": 1757477812449,
+    "name": "Nai Comfort",
+    "email": "abigailmills0554@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T04:16:52.449Z",
+    "sent": false
+  },
+  {
+    "id": 1757477950241,
+    "name": "Abigail",
+    "email": "abigailmills0554@gmail.com",
+    "message": "Welcome to Pent-Shop! Your account has been created successfully.",
+    "timestamp": "2025-09-10T04:19:10.241Z",
+    "sent": true,
+    "type": "welcome_email",
+    "emailInfo": {
+      "messageId": "<e4df8048-6f89-007e-a10c-e63b8cb954b8@gmail.com>",
+      "sentAt": "2025-09-10T04:19:10.241Z"
+    }
+  },
+  {
+    "id": 1757479761411,
+    "name": "Samuel Yaw Dawson",
+    "email": "abigailmills0554@gmail.com",
+    "message": "Order confirmation sent for order MOMO-TXN-1757479758462",
+    "timestamp": "2025-09-10T04:49:21.411Z",
+    "sent": true,
+    "type": "order_confirmation",
+    "orderReference": "MOMO-TXN-1757479758462",
+    "emailInfo": {
+      "messageId": "<572032dc-0f78-aafe-76d8-5894c4cd61ab@gmail.com>",
+      "sentAt": "2025-09-10T04:49:21.411Z"
+    }
+  },
+  {
+    "id": 1757479816757,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T04:50:16.757Z",
+    "sent": false
+  },
+  {
+    "id": 1757479818019,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T04:50:18.019Z",
+    "sent": false
+  },
+  {
+    "id": 1757480967385,
+    "name": "Samuel Yaw Dawson",
+    "email": "abigailmills0554@gmail.com",
+    "message": "Order status update email sent: Processing → Delivered for order MOMO-TXN-1757479758462",
+    "timestamp": "2025-09-10T05:09:27.385Z",
+    "sent": true,
+    "type": "status_update",
+    "orderReference": "MOMO-TXN-1757479758462",
+    "statusChange": {
+      "from": "Processing",
+      "to": "Delivered"
+    },
+    "emailInfo": {
+      "messageId": "<523843b3-0f35-7fb7-9c89-181638732e9a@gmail.com>",
+      "sentAt": "2025-09-10T05:09:27.385Z"
+    }
+  },
+  {
+    "id": 1757481002131,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "a",
+    "timestamp": "2025-09-10T05:10:02.131Z",
+    "sent": false
+  },
+  {
+    "id": 1757481003618,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "a",
+    "timestamp": "2025-09-10T05:10:03.618Z",
+    "sent": false
+  },
+  {
+    "id": 1757481233822,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "helol",
+    "timestamp": "2025-09-10T05:13:53.822Z",
+    "sent": false
+  },
+  {
+    "id": 1757481235139,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "helol",
+    "timestamp": "2025-09-10T05:13:55.139Z",
+    "sent": false
+  },
+  {
+    "id": 1757481284756,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "helol",
+    "timestamp": "2025-09-10T05:14:44.756Z",
+    "sent": false
+  },
+  {
+    "id": 1757481286039,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "helol",
+    "timestamp": "2025-09-10T05:14:46.039Z",
+    "sent": false
+  },
+  {
+    "id": 1757481536711,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T05:18:56.711Z",
+    "sent": false
+  },
+  {
+    "id": 1757481537999,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T05:18:57.999Z",
+    "sent": false
+  },
+  {
+    "id": 1757481780032,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T05:23:00.032Z",
+    "sent": false
+  },
+  {
+    "id": 1757481781315,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T05:23:01.315Z",
+    "sent": false
+  },
+  {
+    "id": 1757481831116,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T05:23:51.116Z",
+    "sent": false
+  },
+  {
+    "id": 1757481832415,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T05:23:52.415Z",
+    "sent": false
+  },
+  {
+    "id": 1757490136461,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T07:42:16.461Z",
+    "sent": false
+  },
+  {
+    "id": 1757490137914,
+    "name": "Samuel Yaw Dawson",
+    "email": "dawsonsam05595@gmail.com",
+    "message": "hello",
+    "timestamp": "2025-09-10T07:42:17.914Z",
+    "sent": false
+  },
+  {
+    "id": 1757499801740,
+    "name": "bONNEY",
+    "email": "bonneyblessedbernard@gmail.com",
+    "message": "Welcome email failed to send during registration.",
+    "timestamp": "2025-09-10T10:23:21.740Z",
+    "sent": false,
+    "type": "welcome_email_failed",
+    "error": {
+      "message": "connect ENETUNREACH 142.251.173.108:465",
+      "timestamp": "2025-09-10T10:23:21.740Z"
+    }
+  },
+  {
+    "id": 1757499907252,
+    "name": "Bonney",
+    "email": "bernardbonney310703@gmail.com",
+    "message": "Welcome to Pent-Shop! Your account has been created successfully.",
+    "timestamp": "2025-09-10T10:25:07.252Z",
+    "sent": true,
+    "type": "welcome_email",
+    "emailInfo": {
+      "messageId": "<04f79863-3d29-ecb8-8296-a4bc8d26ffe8@gmail.com>",
+      "sentAt": "2025-09-10T10:25:07.252Z"
+    }
+  },
+  {
+    "id": 1757500049477,
+    "name": "Bonney",
+    "email": "bernardbonney310703@gmail.com",
+    "message": "Order confirmation sent for order MOMO-TXN-1757500045989",
+    "timestamp": "2025-09-10T10:27:29.477Z",
+    "sent": true,
+    "type": "order_confirmation",
+    "orderReference": "MOMO-TXN-1757500045989",
+    "emailInfo": {
+      "messageId": "<62293afa-660c-1ae9-47e4-6a39cca485aa@gmail.com>",
+      "sentAt": "2025-09-10T10:27:29.477Z"
+    }
+  },
+  {
+    "id": 1757500073762,
+    "name": "Bonney",
+    "email": "bernardbonney310703@gmail.com",
+    "message": "Order status update email sent: Pending → Processing for order MOMO-TXN-1757500045989",
+    "timestamp": "2025-09-10T10:27:53.762Z",
+    "sent": true,
+    "type": "status_update",
+    "orderReference": "MOMO-TXN-1757500045989",
+    "statusChange": {
+      "from": "Pending",
+      "to": "Processing"
+    },
+    "emailInfo": {
+      "messageId": "<2f6b0004-fc5e-8be7-4a59-36a605c3758c@gmail.com>",
+      "sentAt": "2025-09-10T10:27:53.762Z"
+    }
+  },
+  {
+    "id": 1757503493520,
+    "name": "samuel dawson",
+    "email": "deladem.desmond.dd@gmail.com",
+    "message": "Welcome to Pent-Shop! Your account has been created successfully.",
+    "timestamp": "2025-09-10T11:24:53.520Z",
+    "sent": true,
+    "type": "welcome_email",
+    "emailInfo": {
+      "messageId": "<e512f00b-6574-06d5-8ac2-ce666397945a@gmail.com>",
+      "sentAt": "2025-09-10T11:24:53.520Z"
+    }
   }
 ]

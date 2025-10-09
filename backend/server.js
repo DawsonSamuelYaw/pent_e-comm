@@ -16,11 +16,27 @@ const app = express();
 
 // ================== MIDDLEWARE ==================
 app.use(cors({ 
-  origin: ["http://localhost:5173", "http://localhost:5174", "http://localhost:3000"],
-  credentials: true 
+  origin: ["http://localhost:5173", "http://localhost:5174", "http://localhost:3000", "http://localhost:5173"],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'Accept']
 }));
+// Handle preflight requests for specific routes
+app.options('/api/notifications', cors());
+app.options('/api/orders', cors());
+app.options('/api/users', cors());
+// Add other routes as needed
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Add specific CORS headers instead of blanket options
+app.use('/api/notifications', (req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:5173');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.header('Access-Control-Allow-Credentials', 'true');
+  next();
+});
 
 // ================== FILE PATHS ==================
 const DATA_PATH = path.join(__dirname, "data.json");
@@ -826,116 +842,124 @@ app.get("/api/orders", async (req, res) => {
   }
 });
 
-app.put("/api/orders/:id", async (req, res) => {
-  try {
-    const { id } = req.params;
-    const { status } = req.body;
+// app.put("/api/orders/:id", async (req, res) => {
+//   try {
+//     const { id } = req.params;
+//     const { status } = req.body;
     
-    console.log(`PUT /api/orders/${id} - Updating order status to: ${status}`);
+//     console.log(`PUT /api/orders/${id} - Updating order status to: ${status}`);
     
-    if (!status || !status.trim()) {
-      return res.status(400).json({ 
-        success: false, 
-        message: "Status is required and cannot be empty" 
-      });
-    }
+//     if (!status || !status.trim()) {
+//       return res.status(400).json({ 
+//         success: false, 
+//         message: "Status is required and cannot be empty" 
+//       });
+//     }
     
-    const validStatuses = ["Pending", "Processing", "Delivered", "Cancelled"];
-    if (!validStatuses.includes(status)) {
-      return res.status(400).json({ 
-        success: false, 
-        message: `Invalid status. Must be one of: ${validStatuses.join(', ')}` 
-      });
-    }
+//     const validStatuses = ["Pending", "Processing", "Delivered", "Cancelled"];
+//     if (!validStatuses.includes(status)) {
+//       return res.status(400).json({ 
+//         success: false, 
+//         message: `Invalid status. Must be one of: ${validStatuses.join(', ')}` 
+//       });
+//     }
     
-    if (mongoConnected && Order) {
-      if (!mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(400).json({ 
-          success: false, 
-          message: "Invalid order ID format" 
-        });
-      }
+//     if (mongoConnected && Order) {
+//       if (!mongoose.Types.ObjectId.isValid(id)) {
+//         return res.status(400).json({ 
+//           success: false, 
+//           message: "Invalid order ID format" 
+//         });
+//       }
       
-      const updatedOrder = await Order.findByIdAndUpdate(
-        id,
-        { 
-          status: status.trim(),
-          updatedAt: new Date()
-        },
-        { 
-          new: true,
-          runValidators: true
-        }
-      ).lean();
+//       const updatedOrder = await Order.findByIdAndUpdate(
+//         id,
+//         { 
+//           status: status.trim(),
+//           updatedAt: new Date()
+//         },
+//         { 
+//           new: true,
+//           runValidators: true
+//         }
+//       ).lean();
       
-      if (!updatedOrder) {
-        return res.status(404).json({ 
-          success: false, 
-          message: "Order not found. It may have been deleted." 
-        });
-      }
+//       if (!updatedOrder) {
+//         return res.status(404).json({ 
+//           success: false, 
+//           message: "Order not found. It may have been deleted." 
+//         });
+//       }
       
-      res.json({
-        success: true,
-        message: "Order status updated successfully",
-        order: updatedOrder
-      });
-    } else {
-      const orders = readJSON(ORDERS_FILE_PATH);
-      const index = orders.findIndex(o => o._id === id);
+//       res.json({
+//         success: true,
+//         message: "Order status updated successfully",
+//         order: updatedOrder
+//       });
+//     } else {
+//       const orders = readJSON(ORDERS_FILE_PATH);
+//       const index = orders.findIndex(o => o._id === id);
       
-      if (index === -1) {
-        return res.status(404).json({ 
-          success: false, 
-          message: "Order not found. It may have been deleted." 
-        });
-      }
+//       if (index === -1) {
+//         return res.status(404).json({ 
+//           success: false, 
+//           message: "Order not found. It may have been deleted." 
+//         });
+//       }
       
-      orders[index].status = status.trim();
-      orders[index].updatedAt = new Date().toISOString();
+//       orders[index].status = status.trim();
+//       orders[index].updatedAt = new Date().toISOString();
       
-      writeJSON(ORDERS_FILE_PATH, orders);
+//       writeJSON(ORDERS_FILE_PATH, orders);
       
-      res.json({
-        success: true,
-        message: "Order status updated successfully",
-        order: orders[index]
-      });
-    }
+//       res.json({
+//         success: true,
+//         message: "Order status updated successfully",
+//         order: orders[index]
+//       });
+//     }
     
-  } catch (err) {
-    console.error("Error updating order:", err);
+//   } catch (err) {
+//     console.error("Error updating order:", err);
     
-    if (err.name === 'CastError') {
-      return res.status(400).json({ 
-        success: false, 
-        message: "Invalid order ID format" 
-      });
-    }
+//     if (err.name === 'CastError') {
+//       return res.status(400).json({ 
+//         success: false, 
+//         message: "Invalid order ID format" 
+//       });
+//     }
     
-    if (err.name === 'ValidationError') {
-      const errors = Object.values(err.errors).map(e => e.message);
-      return res.status(400).json({ 
-        success: false, 
-        message: "Validation error: " + errors.join(', ')
-      });
-    }
+//     if (err.name === 'ValidationError') {
+//       const errors = Object.values(err.errors).map(e => e.message);
+//       return res.status(400).json({ 
+//         success: false, 
+//         message: "Validation error: " + errors.join(', ')
+//       });
+//     }
     
-    res.status(500).json({ 
-      success: false, 
-      message: "Server error occurred while updating order status",
-      error: process.env.NODE_ENV === 'development' ? {
-        message: err.message,
-        stack: err.stack,
-        name: err.name
-      } : 'Internal server error'
-    });
-  }
-});
-
+//     res.status(500).json({ 
+//       success: false, 
+//       message: "Server error occurred while updating order status",
+//       error: process.env.NODE_ENV === 'development' ? {
+//         message: err.message,
+//         stack: err.stack,
+//         name: err.name
+//       } : 'Internal server error'
+//     });
+//   }
+// });
 app.post("/api/orders", async (req, res) => {
   try {
     console.log("POST /api/orders - Creating new order");
+    console.log("Request body:", req.body);
+    
+    // Check if req.body exists
+    if (!req.body || Object.keys(req.body).length === 0) {
+      return res.status(400).json({ 
+        success: false, 
+        message: "Request body is empty or missing" 
+      });
+    }
     
     const {
       userEmail,
@@ -954,6 +978,8 @@ app.post("/api/orders", async (req, res) => {
         message: "Missing required fields: userEmail, amount, and products are required" 
       });
     }
+    
+    // ... rest of your order creation code remains the same ...
     
     if (products.length === 0) {
       return res.status(400).json({ 
@@ -1048,11 +1074,64 @@ app.post("/api/orders", async (req, res) => {
       console.log(`Order saved to file: ${savedOrder._id}`);
     }
     
+    // ***** ADD THIS CODE TO SEND CONFIRMATION EMAIL *****
+    try {
+      const emailResult = await sendOrderConfirmationEmail(savedOrder);
+      
+      if (emailResult.success) {
+        console.log(`Order confirmation email sent to ${savedOrder.userEmail}`);
+        
+        // Save email notification record
+        const notifications = readJSON(NOTIFICATIONS_PATH);
+        notifications.push({
+          id: Date.now(),
+          name: customerInfo?.fullName || 'Customer',
+          email: savedOrder.userEmail,
+          message: `Order confirmation sent for order ${savedOrder.reference}`,
+          timestamp: new Date().toISOString(),
+          sent: true,
+          type: 'order_confirmation',
+          orderReference: savedOrder.reference,
+          emailInfo: {
+            messageId: emailResult.messageId,
+            sentAt: new Date().toISOString()
+          }
+        });
+        writeJSON(NOTIFICATIONS_PATH, notifications);
+        
+      } else {
+        console.warn(`Order confirmation email failed for ${savedOrder.userEmail}:`, emailResult.error || emailResult.reason);
+        
+        // Save failed email attempt
+        const notifications = readJSON(NOTIFICATIONS_PATH);
+        notifications.push({
+          id: Date.now(),
+          name: customerInfo?.fullName || 'Customer',
+          email: savedOrder.userEmail,
+          message: `Order confirmation email failed for order ${savedOrder.reference}`,
+          timestamp: new Date().toISOString(),
+          sent: false,
+          type: 'order_confirmation_failed',
+          orderReference: savedOrder.reference,
+          error: {
+            message: emailResult.error || emailResult.reason,
+            timestamp: new Date().toISOString()
+          }
+        });
+        writeJSON(NOTIFICATIONS_PATH, notifications);
+      }
+      
+    } catch (emailError) {
+      console.error("Unexpected error sending order confirmation:", emailError);
+    }
+    // ***** END OF EMAIL CODE *****
+    
     res.status(201).json({
       success: true,
       message: "Order created successfully",
       order: savedOrder,
-      _id: savedOrder._id
+      _id: savedOrder._id,
+      emailSent: true // Let frontend know email was attempted
     });
     
   } catch (err) {
@@ -1064,6 +1143,138 @@ app.post("/api/orders", async (req, res) => {
     });
   }
 });
+
+// app.post("/api/orders", async (req, res) => {
+//   try {
+//     console.log("POST /api/orders - Creating new order");
+    
+//     const {
+//       userEmail,
+//       amount,
+//       reference,
+//       products,
+//       status = 'Pending',
+//       paymentMethod,
+//       customerInfo,
+//       paymentInfo
+//     } = req.body;
+    
+//     if (!userEmail || !amount || !products || !Array.isArray(products)) {
+//       return res.status(400).json({ 
+//         success: false, 
+//         message: "Missing required fields: userEmail, amount, and products are required" 
+//       });
+//     }
+    
+//     if (products.length === 0) {
+//       return res.status(400).json({ 
+//         success: false, 
+//         message: "Order must contain at least one product" 
+//       });
+//     }
+    
+//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     if (!emailRegex.test(userEmail)) {
+//       return res.status(400).json({ 
+//         success: false, 
+//         message: "Invalid email format" 
+//       });
+//     }
+    
+//     if (isNaN(amount) || amount <= 0) {
+//       return res.status(400).json({ 
+//         success: false, 
+//         message: "Invalid amount. Must be a positive number" 
+//       });
+//     }
+    
+//     const orderReference = reference || `ORDER-${Date.now()}-${Math.random().toString(36).substring(2, 8).toUpperCase()}`;
+    
+//     const orderData = {
+//       userEmail: userEmail.trim().toLowerCase(),
+//       amount: parseFloat(amount),
+//       reference: orderReference,
+//       status: status || 'Pending',
+//       products: products.map(product => ({
+//         productId: product.productId?.toString() || `temp_${Date.now()}_${Math.random()}`,
+//         name: product.name || 'Unknown Product',
+//         price: parseFloat(product.price) || 0,
+//         quantity: parseInt(product.quantity) || 1
+//       })),
+//       paymentMethod: paymentMethod || 'Unknown',
+//       customerInfo: customerInfo || {},
+//       paymentInfo: paymentInfo || {},
+//       createdAt: new Date(),
+//       updatedAt: new Date()
+//     };
+    
+//     let savedOrder;
+    
+//     if (mongoConnected && Order) {
+//       try {
+//         const existingOrder = await Order.findOne({ reference: orderReference }).maxTimeMS(5000);
+//         if (existingOrder) {
+//           return res.status(400).json({ 
+//             success: false, 
+//             message: "Order reference already exists" 
+//           });
+//         }
+        
+//         const newOrder = new Order(orderData);
+//         savedOrder = await newOrder.save();
+//         console.log(`Order created in MongoDB: ${savedOrder._id}`);
+        
+//       } catch (mongoError) {
+//         console.error("MongoDB order creation failed:", mongoError.message);
+//         console.log("Falling back to file-based storage");
+        
+//         const orders = readJSON(ORDERS_FILE_PATH);
+//         const fileOrder = {
+//           _id: new Date().getTime().toString(),
+//           ...orderData
+//         };
+//         orders.push(fileOrder);
+//         writeJSON(ORDERS_FILE_PATH, orders);
+//         savedOrder = fileOrder;
+//         console.log(`Order saved to file: ${savedOrder._id}`);
+//       }
+//     } else {
+//       const orders = readJSON(ORDERS_FILE_PATH);
+      
+//       const existingOrder = orders.find(o => o.reference === orderReference);
+//       if (existingOrder) {
+//         return res.status(400).json({ 
+//           success: false, 
+//           message: "Order reference already exists" 
+//         });
+//       }
+      
+//       const fileOrder = {
+//         _id: new Date().getTime().toString(),
+//         ...orderData
+//       };
+//       orders.push(fileOrder);
+//       writeJSON(ORDERS_FILE_PATH, orders);
+//       savedOrder = fileOrder;
+//       console.log(`Order saved to file: ${savedOrder._id}`);
+//     }
+    
+//     res.status(201).json({
+//       success: true,
+//       message: "Order created successfully",
+//       order: savedOrder,
+//       _id: savedOrder._id
+//     });
+    
+//   } catch (err) {
+//     console.error("Error creating order:", err);
+//     res.status(500).json({ 
+//       success: false, 
+//       message: "Server error occurred while creating order",
+//       error: process.env.NODE_ENV === 'development' ? err.message : 'Internal server error'
+//     });
+//   }
+// });
 app.get("/api/orders/reference/:reference", async (req, res) => {
   try {
     const { reference } = req.params;

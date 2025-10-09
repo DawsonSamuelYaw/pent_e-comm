@@ -1,17 +1,5 @@
 [
   {
-    "id": "1755619563164",
-    "name": "Youth Cloth",
-    "price": 50,
-    "description": "The Church of Pentecost, Youth Ministry Cloth",
-    "colors": [],
-    "sizes": [],
-    "images": [
-      "/uploads/1755619563156-481023657.jpeg"
-    ],
-    "updatedAt": "2025-08-27T06:17:39.243Z"
-  },
-  {
     "id": "1755619629641",
     "name": "Pemem Cloth",
     "price": 100,
@@ -35,7 +23,7 @@
   },
   {
     "id": "1755726759174",
-    "name": "Children’s Syllabu",
+    "name": "Children’s Syllabus ",
     "price": 50,
     "description": "The Church of Pentecost, Children's Ministry",
     "colors": [],
@@ -43,6 +31,6 @@
     "images": [
       "/uploads/1755726759166-881013206.jpg"
     ],
-    "updatedAt": "2025-08-26T20:23:08.937Z"
+    "updatedAt": "2025-09-10T08:49:28.919Z"
   }
 ]
