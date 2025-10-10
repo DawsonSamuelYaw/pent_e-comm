@@ -24,7 +24,7 @@ const OrdersSection = () => {
   const [selectedOrder, setSelectedOrder] = useState(null);
   const [showOrderDetails, setShowOrderDetails] = useState(false);
   const [updating, setUpdating] = useState({}); // Track which orders are being updated
-  
+const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000"; 
   const statusOptions = ["Pending", "Processing", "Delivered", "Cancelled"];
 
   const fetchOrders = async () => {
@@ -33,7 +33,7 @@ const OrdersSection = () => {
       setError(""); // Clear previous errors
       
       console.log("🔄 Fetching orders...");
-      const res = await fetch("http://localhost:5000/api/orders");
+      const res = await fetch(`${API_BASE_URL}/api/orders`);
       
       if (!res.ok) {
         throw new Error(`HTTP ${res.status}: ${res.statusText}`);

@@ -1,11 +1,11 @@
 // src/components/admin/SalesReportsSection.jsx
 import React, { useEffect, useState } from "react";
-
+const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000"; 
 const SalesReportsSection = () => {
   const [report, setReport] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5001/api/reports/sales")
+    fetch(`${API_BASE_URL}/api/reports/sales`)
       .then((res) => res.json())
       .then((data) => setReport(data));
   }, []);

@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 import Swal from 'sweetalert2';
 
-const API_BASE_URL = "http://localhost:5000"; // Backend URL
+const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000";  // Backend URL
 
 const ProductDetails = () => {
   const { id } = useParams();

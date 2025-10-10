@@ -4,7 +4,7 @@ import { Calendar, Clock, MapPin, Users, Heart, Share, Play, Eye, ThumbsUp, Spar
 const Un = "/imgs/unl.jpg"; // Default image
 
 // API base URL - adjust this to match your server
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000"; 
 
 const Pro = () => {
   const [events, setEvents] = useState([]);
@@ -462,7 +462,7 @@ const Pro = () => {
       <div className="max-w-7xl mx-auto">
         
         {/* Enhanced Header Section */}
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="relative">
               <div className="p-4 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl shadow-lg">
@@ -478,10 +478,10 @@ const Pro = () => {
                 Live from your CMS
               </p>
             </div>
-          </div>
+          </div> */}
           
           {/* Stats Banner */}
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-gray-200 shadow-lg">
+          {/* <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-gray-200 shadow-lg">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-indigo-600 mb-1">{events.length}</div>
@@ -501,7 +501,7 @@ const Pro = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Enhanced Search and Filter Section */}
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-gray-200 shadow-lg">
@@ -1144,7 +1144,7 @@ const Pro = () => {
         )}
 
         {/* Enhanced CMS Status Footer */}
-        <div className="mt-12 bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-pink-500/10 backdrop-blur-sm rounded-2xl p-6 border border-indigo-200/50">
+        {/* <div className="mt-12 bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-pink-500/10 backdrop-blur-sm rounded-2xl p-6 border border-indigo-200/50">
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
@@ -1184,7 +1184,7 @@ const Pro = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Enhanced Success Notification */}
         {showNotification && (

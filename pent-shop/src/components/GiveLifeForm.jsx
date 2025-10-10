@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 
+const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000"; 
 const GiveLifeForm = ({ onSuccess }) => {
   const [formData, setFormData] = useState({
     fullName: '',
@@ -50,7 +51,7 @@ const GiveLifeForm = ({ onSuccess }) => {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/spiritual-submissions', {
+      const res = await fetch(`${API_BASE_URL}/api/spiritual-submissions`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

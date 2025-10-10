@@ -22,6 +22,7 @@ const ContentManagementSystem = () => {
     status: '',
     search: '',
   });
+  const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000"; 
 
   // Form state
   const [formData, setFormData] = useState({
@@ -56,7 +57,7 @@ const ContentManagementSystem = () => {
         limit: 100,
       }).toString();
 
-      const response = await fetch(`http://localhost:5000/api/cms/posts?${queryParams}`);
+      const response = await fetch(`${API_BASE_URL}/api/cms/posts?${queryParams}`);
       if (!response.ok) throw new Error('Failed to fetch posts');
 
       const data = await response.json();

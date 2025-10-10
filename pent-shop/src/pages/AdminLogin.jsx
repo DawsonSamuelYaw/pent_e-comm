@@ -4,7 +4,7 @@ import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Pent from '../components/final_logo.png';
-
+const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000"; 
 const AdminLogin = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({ email: '', password: '' });
@@ -19,7 +19,7 @@ const AdminLogin = () => {
 
     try {
       const res = await axios.post(
-        'http://localhost:5000/api/admin/login',
+        `${API_BASE_URL}/api/admin/login`,
         {
           email: form.email.trim(),
           password: form.password.trim(),

@@ -16,7 +16,7 @@ const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchFocused, setIsSearchFocused] = useState(false);
-
+const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000"; 
   // Fetch user info from localStorage or backend
   const fetchUser = async () => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
@@ -26,7 +26,7 @@ const Header = () => {
       setUser(storedUser);
     } else if (token) {
       try {
-        const res = await axios.get('http://localhost:5000/api/auth/me', {
+        const res = await axios.get(`${API_BASE_URL}/api/auth/me`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUser(res.data.user);

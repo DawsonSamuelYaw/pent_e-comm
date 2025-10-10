@@ -20,7 +20,7 @@ import {
   FiShoppingBag
 } from "react-icons/fi";
 
-const API_BASE_URL = "http://localhost:5000"; // Backend URL
+const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000"; // Backend URL
 
 const ProductsSection = () => {
   const [products, setProducts] = useState([]);

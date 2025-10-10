@@ -5,7 +5,7 @@ import { FiMinus, FiPlus } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
-const API_BASE_URL = "http://localhost:5000"; // Backend URL
+const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000";  // Backend URL
 
 const ShowCart = () => {
   const navigate = useNavigate();

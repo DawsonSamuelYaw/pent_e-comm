@@ -28,7 +28,7 @@ const Login = () => {
   const [focusedField, setFocusedField] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
   const [isFormValid, setIsFormValid] = useState(false);
-
+const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000"; 
   useEffect(() => {
     setIsFormValid(formData.email.includes('@') && formData.password.length >= 6);
   }, [formData]);
@@ -54,7 +54,7 @@ const Login = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/users/login",
+        `${API_BASE_URL}/api/users/login`,
         {
           email: formData.email.trim(),
           password: formData.password.trim(),

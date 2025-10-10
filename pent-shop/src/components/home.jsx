@@ -51,8 +51,11 @@ const Modal = ({ children, onClose, bgImage }) => (
         {children}
       </div>
       <button
-        onClick={onClose}
-        className="absolute top-4 cursor-pointer right-4 bg-red-500/90 backdrop-blur-sm text-white p-2 rounded-full hover:bg-red-600 transition-all duration-300 transform hover:scale-110 shadow-lg border border-white/20"
+        onClick={(e) => {
+          e.stopPropagation();
+          onClose();
+        }}
+        className="absolute top-4 cursor-pointer right-4 bg-red-500/90 backdrop-blur-sm text-white p-2 rounded-full hover:bg-red-600 transition-all duration-300 transform hover:scale-110 shadow-lg border border-white/20 z-50"
       >
         <MdClose size={20} />
       </button>
@@ -69,10 +72,10 @@ const Home = () => {
   const [isCarouselPlaying, setIsCarouselPlaying] = useState(true);
 
   const handleClosePopup = () => {
-  setShowPopup(false);
-  setAnswered(false);
-  setWantsToGiveLife(false);
-};
+    setShowPopup(false);
+    setAnswered(false);
+    setWantsToGiveLife(false);
+  };
 
   const prevSlide = () => {
     setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { User, Package, Calendar, CreditCard, ShoppingBag, Edit3, Save, X } from 'lucide-react';
-
+const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000"; 
 const UserDashboard = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
@@ -66,7 +66,7 @@ const UserDashboard = () => {
       setOrdersLoading(true);
       console.log('Fetching orders for user:', userIdentifier);
       
-      const response = await fetch('http://localhost:5000/api/orders');
+      const response = await fetch(`${API_BASE_URL}5000/api/orders`);
       
       if (!response.ok) {
         throw new Error(`Failed to fetch orders: ${response.status} ${response.statusText}`);

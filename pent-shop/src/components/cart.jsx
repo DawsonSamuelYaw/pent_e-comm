@@ -1,25 +1,52 @@
 // src/components/Cart.jsx
 import React, { useContext, useEffect, useState } from 'react';
 import { Info } from '../context/info';
-import { useNavigate } from 'react-router-dom';
-import { ShoppingCart, Star, Tag, Zap, Heart, Plus, ArrowRight, Sparkles, ShieldCheck } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { ShoppingCart, Star, Tag, Heart, Plus, ArrowRight, Sparkles, ShieldCheck } from 'lucide-react';
 import Swal from 'sweetalert2';
 
-const API_BASE_URL = "http://localhost:5000"; // ✅ Local backend URL
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 const Cart = () => {
   const { cart, handlesubmitCart } = useContext(Info);
   const [products, setProducts] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [authLoading, setAuthLoading] = useState(true);
   const [hoveredProduct, setHoveredProduct] = useState(null);
   const navigate = useNavigate();
+  const location = useLocation();
 
-  // Check if user is logged in
+  // Check authentication status with backend
+  const checkAuth = async () => {
+    setAuthLoading(true);
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/auth/check`, {
+        method: 'GET',
+        credentials: 'include', // Important: includes cookies in request
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setIsLoggedIn(data.isAuthenticated || false);
+      } else {
+        setIsLoggedIn(false);
+      }
+    } catch (error) {
+      console.error('Auth check failed:', error);
+      setIsLoggedIn(false);
+    } finally {
+      setAuthLoading(false);
+    }
+  };
+
+  // Check authentication on mount and location change
   useEffect(() => {
-    const user = localStorage.getItem("loggedInUser");
-    setIsLoggedIn(!!user);
-  }, []);
+    checkAuth();
+  }, [location]);
 
   // Fetch products from local server
   useEffect(() => {
@@ -39,32 +66,68 @@ const Cart = () => {
     fetchProducts();
   }, []);
 
-  // Handle checkout click
-  const handleProceedToCheckout = () => {
-    if (!isLoggedIn) {
-      Swal.fire({
-        icon: 'warning',
-        title: 'Login Required',
-        text: 'You must log in before proceeding to checkout.',
-        showCancelButton: true,
-        confirmButtonText: 'Login Now',
-        cancelButtonText: 'Cancel',
-        confirmButtonColor: '#dc2626',
-        background: '#ffffff',
-        borderRadius: '16px',
-        customClass: {
-          popup: 'shadow-2xl',
-          confirmButton: 'rounded-lg px-6 py-3',
-          cancelButton: 'rounded-lg px-6 py-3'
-        }
-      }).then((result) => {
-        if (result.isConfirmed) {
-          localStorage.setItem("redirectAfterLogin", "/checkout");
-          navigate("/login");
+  // Handle checkout click with real-time auth check
+  const handleProceedToCheckout = async () => {
+    // Show loading
+    Swal.fire({
+      title: 'Checking authentication...',
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading();
+      }
+    });
+
+    try {
+      // Check authentication status in real-time
+      const response = await fetch(`${API_BASE_URL}/api/auth/check`, {
+        method: 'GET',
+        credentials: 'include',
+        headers: {
+          'Content-Type': 'application/json',
         }
       });
-    } else {
-      navigate("/checkout");
+
+      const data = await response.json();
+      Swal.close();
+
+      if (data.isAuthenticated) {
+        // User is authenticated, proceed to checkout
+        navigate("/checkout");
+      } else {
+        // User is not authenticated, show login prompt
+        Swal.fire({
+          icon: 'warning',
+          title: 'Login Required',
+          text: 'You must log in before proceeding to checkout.',
+          showCancelButton: true,
+          confirmButtonText: 'Login Now',
+          cancelButtonText: 'Cancel',
+          confirmButtonColor: '#dc2626',
+          background: '#ffffff',
+          borderRadius: '16px',
+          customClass: {
+            popup: 'shadow-2xl',
+            confirmButton: 'rounded-lg px-6 py-3',
+            cancelButton: 'rounded-lg px-6 py-3'
+          }
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // Store intended destination
+            sessionStorage.setItem("redirectAfterLogin", "/checkout");
+            navigate("/login");
+          }
+        });
+      }
+    } catch (error) {
+      console.error('Auth check failed:', error);
+      Swal.close();
+      
+      Swal.fire({
+        icon: 'error',
+        title: 'Connection Error',
+        text: 'Unable to verify authentication. Please try again.',
+        confirmButtonColor: '#dc2626',
+      });
     }
   };
 
@@ -72,13 +135,12 @@ const Cart = () => {
   const getImageUrl = (product) => {
     if (product.img) return `${API_BASE_URL}${product.img}`;
     if (product.images && product.images.length > 0) return `${API_BASE_URL}${product.images[0]}`;
-    return "/placeholder.jpg"; // fallback image
+    return "/placeholder.jpg";
   };
 
-  if (loading) {
+  if (loading || authLoading) {
     return (
       <div className="min-h-screen font-[poppins] bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 flex items-center justify-center relative overflow-hidden">
-        {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-red-400/20 to-pink-600/20 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute top-1/2 -left-4 w-96 h-96 bg-gradient-to-br from-blue-400/20 to-purple-600/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
@@ -100,16 +162,13 @@ const Cart = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 font-sans relative overflow-hidden">
-      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-4 -right-4 w-96 h-96 bg-gradient-to-br from-red-400/10 to-pink-600/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute top-1/2 -left-4 w-72 h-72 bg-gradient-to-br from-blue-400/10 to-purple-600/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-gradient-to-br from-emerald-400/10 to-teal-600/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      {/* Enhanced Header Section with glassmorphism */}
       <div className="relative bg-gradient-to-r from-red-600 via-red-700 to-pink-600 text-white py-12 px-4 sm:px-6 lg:px-8 shadow-2xl overflow-hidden">
-        {/* Header background pattern */}
         <div className="absolute inset-0 opacity-50">
           <div className="w-full h-full bg-white/5 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:30px_30px]"></div>
         </div>
@@ -146,7 +205,6 @@ const Cart = () => {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto p-4 sm:p-6 md:p-8 lg:p-12 relative z-10">
         {products.length === 0 ? (
           <div className="text-center py-20">
@@ -168,10 +226,8 @@ const Cart = () => {
                 onMouseEnter={() => setHoveredProduct(info.id)}
                 onMouseLeave={() => setHoveredProduct(null)}
               >
-                {/* Glow effect on hover */}
                 <div className="absolute inset-0 bg-gradient-to-r from-red-500/0 via-pink-500/0 to-purple-500/0 group-hover:from-red-500/10 group-hover:via-pink-500/5 group-hover:to-purple-500/10 rounded-2xl transition-all duration-500"></div>
                 
-                {/* Product Image Container */}
                 <div className="relative overflow-hidden rounded-t-2xl">
                   <img
                     src={getImageUrl(info)}
@@ -182,24 +238,15 @@ const Cart = () => {
                     }}
                   />
                   
-                  {/* Gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                  {/* Heart Icon with animation */}
                   <button 
                     className="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white hover:scale-110 shadow-lg"
                     onClick={e => e.stopPropagation()}
                   >
                     <Heart className="w-4 h-4 text-gray-600 hover:text-red-500 transition-colors duration-200" />
                   </button>
-                  
-                  {/* Enhanced Sale Badge */}
-                  {/* <div className="absolute top-3 left-3 bg-gradient-to-r from-red-500 to-pink-500 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center space-x-1">
-                    <Zap className="w-3 h-3" />
-                    <span>Hot Deal</span>
-                  </div> */}
 
-                  {/* Quick view on hover */}
                   <div className="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                     <button className="w-full bg-white/90 backdrop-blur-sm text-gray-900 text-sm font-semibold py-2 rounded-lg hover:bg-white transition-colors duration-200 shadow-lg">
                       Quick View
@@ -207,13 +254,11 @@ const Cart = () => {
                   </div>
                 </div>
 
-                {/* Product Info with enhanced styling */}
                 <div className="p-4 relative z-10">
                   <h2 className="text-sm font-bold mb-2 line-clamp-2 text-gray-800 group-hover:text-red-600 transition-colors duration-300 leading-tight">
                     {info.name}
                   </h2>
                   
-                  {/* Enhanced Rating Stars */}
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center space-x-1">
                       {[...Array(5)].map((_, i) => (
@@ -230,24 +275,16 @@ const Cart = () => {
                     </div>
                   </div>
                   
-                  {/* Enhanced Price with better styling */}
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex flex-col">
                       <div className="flex items-baseline space-x-2">
                         <p className="text-lg font-black text-red-600 bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text">
                           GH¢{info.price}
                         </p>
-                        {/* <p className="text-xs text-gray-400 line-through font-medium">
-                          GH¢{(info.price * 1.25).toFixed(2)}
-                        </p> */}
                       </div>
                     </div>
-                    {/* <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white text-xs px-2 py-1 rounded-full font-bold shadow-sm">
-                      20% OFF
-                    </div> */}
                   </div>
                   
-                  {/* Enhanced Add to Cart Button */}
                   <button
                     className="w-full bg-gradient-to-r from-red-600 via-red-700 to-pink-600 text-white text-sm px-4 py-3 rounded-xl hover:from-red-700 hover:via-red-800 hover:to-pink-700 transition-all duration-300 flex items-center justify-center space-x-2 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 relative overflow-hidden group/btn"
                     onClick={e => {
@@ -267,7 +304,6 @@ const Cart = () => {
                       });
                     }}
                   >
-                    {/* Button shine effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
                     <Plus className="w-4 h-4 relative z-10" />
                     <span className="relative z-10">Add to Cart</span>
@@ -279,8 +315,7 @@ const Cart = () => {
         )}
       </div>
 
-      {/* Enhanced Checkout Section with glassmorphism */}
-      {cart.length > 0 && (
+      {/* {cart.length > 0 && (
         <div className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-xl border-t border-white/50 shadow-2xl z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
             <div className="flex items-center justify-between">
@@ -303,7 +338,6 @@ const Cart = () => {
                 onClick={handleProceedToCheckout}
                 className="bg-gradient-to-r from-red-600 via-red-700 to-pink-600 text-white px-8 py-4 rounded-2xl hover:from-red-700 hover:via-red-800 hover:to-pink-700 transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center space-x-3 relative overflow-hidden group"
               >
-                {/* Button animation */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                 <span className="relative z-10">Proceed to Checkout</span>
                 <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
@@ -311,9 +345,8 @@ const Cart = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
-      {/* Enhanced Mobile Cart Indicator */}
       {cart.length > 0 && (
         <div className="sm:hidden fixed top-6 right-4 z-40">
           <div className="bg-gradient-to-r from-red-600 to-pink-600 text-white rounded-2xl px-4 py-3 shadow-xl flex items-center space-x-3 border border-white/20 backdrop-blur-sm">

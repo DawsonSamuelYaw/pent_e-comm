@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const Sign = () => {
   const navigate = useNavigate();
-  
+  const API_BASE_URL =   import.meta.env.VITE_API_URL || "http://localhost:5000"; 
   // Form State
   const [formData, setFormData] = useState({
     name: "",
@@ -83,7 +83,7 @@ const Sign = () => {
       });
 
       // Make REAL API call to your backend
-      const response = await fetch("http://localhost:5000/api/users/signup", {
+      const response = await fetch(`${API_BASE_URL}/api/users/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
